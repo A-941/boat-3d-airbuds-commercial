@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boAt Airdopes 3D Flagship Commercial | 60 FPS Hyper-Physics Showcase</title>
+  <meta name="description" content="Cinematic 3D commercial animation for boAt flagship earbuds built in Blender 5.2 LTS with 60 FPS hyper-physics, exploded driver anatomy, and interactive 3D WebGL.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-red"></div>
+  <div class="ambient-glow glow-cyan"></div>
+  <div class="ambient-glow glow-magenta"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="brand-logo">bo<span class="red-accent">A</span>t</span>
+        <span class="badge-pill">3D CINEMATIC</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#commercial">Commercial</a>
+        <a href="#viewer3d">3D WebGL</a>
+        <a href="#exploded">Tech Anatomy</a>
+        <a href="#specs">Specifications</a>
+        <a href="https://github.com/A-941" target="_blank" class="nav-btn">GitHub Repo</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="pill-tag">🔥 FLAGSHIP COMMERCIAL ANIMATION</div>
+        <h1 class="hero-title">
+          boAt Airdopes <br>
+          <span class="gradient-text">Hyper-Physics 3D</span>
+        </h1>
+        <p class="hero-subtitle">
+          Engineered in <strong>Blender 5.2 LTS</strong> at <strong>60 FPS</strong>. Featuring kinetic impact recoil, pneumatic spring lid release, bullet-time multi-layer exploded anatomy, and sonic soundwave shockwaves.
+        </p>
+        <div class="hero-actions">
+          <a href="#commercial" class="btn btn-primary">Watch Commercial 60 FPS</a>
+          <a href="#viewer3d" class="btn btn-glass">Interact in 3D WebGL</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-num">60</span>
+            <span class="stat-label">FPS Fluid Dynamics</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">8-Tier</span>
+            <span class="stat-label">Exploded Tech Layers</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">10mm</span>
+            <span class="stat-label">Copper Dynamic Driver</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-video-wrapper">
+          <video autoplay loop muted playsinline class="hero-video" poster="renders/boat_earbuds_hero.png">
+            <source src="renders/boat_earbuds_commercial.mp4" type="video/mp4">
+          </video>
+          <div class="video-overlay-badge">60 FPS Ultra-HD Preview</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commercial Player Section -->
+  <section class="section commercial-section" id="commercial">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CINEMATIC PRODUCT TEASER</span>
+        <h2 class="section-title">The 60 FPS Master Commercial</h2>
+        <p class="section-desc">Inspect every microsecond of kinetic physics, sonic shockwave expansions, and aerial double-helix choreography.</p>
+      </div>
+
+      <div class="video-container-card">
+        <video id="mainCommercialVideo" controls autoplay loop playsinline poster="renders/boat_earbuds_hero.png">
+          <source src="renders/boat_earbuds_commercial.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="video-controls-bar">
+          <div class="speed-selector">
+            <span>Playback Speed:</span>
+            <button class="speed-btn" data-speed="0.25">0.25x (Bullet-Time)</button>
+            <button class="speed-btn" data-speed="0.5">0.5x</button>
+            <button class="speed-btn active" data-speed="1.0">1.0x (Real-Time)</button>
+            <button class="speed-btn" data-speed="2.0">2.0x</button>
+          </div>
+          <div class="video-badges">
+            <span class="tech-badge">EEVEE Next Engine</span>
+            <span class="tech-badge">H.264 60 FPS</span>
+            <span class="tech-badge">AgX Contrast</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive 3D WebGL Section -->
+  <section class="section viewer-section" id="viewer3d">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">LIVE WEBGL BROWSER INTERACTION</span>
+        <h2 class="section-title">Interactive 3D Earbud Inspector</h2>
+        <p class="section-desc">Rotate, zoom, and inspect the 3D earbuds in your browser 24/7 from anywhere in the world on phone or computer.</p>
+      </div>
+
+      <div class="canvas-wrapper-card">
+        <div id="webglContainer" class="webgl-canvas-container"></div>
+        <div class="canvas-overlay-hud">
+          <div class="hud-top">
+            <span class="hud-live-dot"></span> LIVE 3D ORBIT VIEWPORT
+          </div>
+          <div class="hud-bottom">
+            <span>🖱️ Drag to Rotate | 📜 Scroll to Zoom | 👆 Touch to Orbit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exploded Anatomy Section -->
+  <section class="section anatomy-section" id="exploded">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">INTERNAL ACOUSTIC ARCHITECTURE</span>
+        <h2 class="section-title">Mid-Air Deconstructed Tech Reveal</h2>
+        <p class="section-desc">Every sub-millimeter component engineered inside the boAt Airdopes chassis.</p>
+      </div>
+
+      <div class="anatomy-grid">
+        <div class="anatomy-card">
+          <div class="card-image-wrap">
+            <img src="renders/frame_120.png" alt="boAt Earbuds Exploded Tech View" class="card-img" loading="lazy">
+            <span class="card-tag">Frame 120 / Bullet-Time</span>
+          </div>
+          <div class="card-body">
+            <h3>Pure Copper Voice Coil & Driver</h3>
+            <p>10mm dynamic acoustic diaphragm wound with high-purity copper coils and neodymium alloy ring magnets for ultra-deep sub-bass down to 20Hz.</p>
+            <ul class="tech-list">
+              <li>⚡ 10mm Titanium Diaphragm Dome</li>
+              <li>🌀 Pure Copper Voice Coil (Spins 720° in zero-G)</li>
+              <li>🧲 High-Flux Neodymium Ring Magnet</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="anatomy-card">
+          <div class="card-image-wrap">
+            <img src="renders/boat_earbuds_hero.png" alt="boAt Earbuds Hero Duo Presentation" class="card-img" loading="lazy">
+            <span class="card-tag">Frame 245 / Grand Hero</span>
+          </div>
+          <div class="card-body">
+            <h3>Ergonomic Chassis & 24K Gold Detailing</h3>
+            <p>Flagship Ruby Crimson Metallic finish with Velvet Carbon Matte stems, capacitive touch zones, and mirror-finished gold boAt anchor badges.</p>
+            <ul class="tech-list">
+              <li>💎 Smoked Crystal Acrylic Acoustic Viewport</li>
+              <li>✨ 24K Mirror Gold Laser-Etched Badges</li>
+              <li>🔴 Multi-Tier Translucent Ruby Silicone Tips</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specifications Table Section -->
+  <section class="section specs-section" id="specs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">HARDWARE SPECIFICATIONS</span>
+        <h2 class="section-title">Acoustic & Simulation Specs</h2>
+      </div>
+
+      <div class="specs-grid">
+        <div class="spec-box">
+          <div class="spec-icon">🔊</div>
+          <h4>Driver Diameter</h4>
+          <p class="spec-val">10mm Dynamic Bass</p>
+          <span class="spec-sub">Pure Copper Winding</span>
+        </div>
+        <div class="spec-box">
+          <div class="spec-icon">⚡</div>
+          <h4>Frequency Range</h4>
+          <p class="spec-val">20Hz – 20,000Hz</p>
+          <span class="spec-sub">boAt Signature Sound</span>
+        </div>
+        <div class="spec-box">
+          <div class="spec-icon">🔋</div>
+          <h4>Battery Life</h4>
+          <p class="spec-val">50 Hours Total</p>
+          <span class="spec-sub">ASAP™ Charge (10m = 10h)</span>
+        </div>
+        <div class="spec-box">
+          <div class="spec-icon">🎮</div>
+          <h4>Beast™ Latency</h4>
+          <p class="spec-val">40ms Ultra-Low</p>
+          <span class="spec-sub">Gaming Synchronized</span>
+        </div>
+        <div class="spec-box">
+          <div class="spec-icon">🛡️</div>
+          <h4>Water Resistance</h4>
+          <p class="spec-val">IPX5 Splashproof</p>
+          <span class="spec-sub">Sweat & Rain Defense</span>
+        </div>
+        <div class="spec-box">
+          <div class="spec-icon">🎬</div>
+          <h4>Blender Simulation</h4>
+          <p class="spec-val">60 FPS / EEVEE Next</p>
+          <span class="spec-sub">Full Kinetic Physics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 boAt Airdopes 3D Showcase. Created with Blender 5.2 LTS & Three.js.</p>
+      <p class="footer-sub">Open source 3D commercial animation project hosted publicly on GitHub.</p>
+    </div>
+  </footer>
+
+  <!-- Three.js CDN for 3D Viewer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
